@@ -1,6 +1,87 @@
-<html>
-  <body>
-    <h1>SirawitTamdee</h1>
-    <h2>661512198</h2>
-  </body>
-  </html>
+
+html_content = """
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ร้านขายยานพาหนะสำหรับนักศึกษา มช.</title>
+    <style>
+        body {
+            font-family: TH Sarabun PSK, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header img {
+            height: 80px;
+        }
+        .advertisement {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px;
+            color: #333;
+        }
+        .bike-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .bike {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .bike img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #e91e63;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="โลโก้ร้าน Big Bike">
+        <h1>ร้าน ยานยนต์ สำหรับนักศึกษา มหาวิทยาลัยเชียงใหม่</h1>
+    </header>
+    <div class="advertisement">
+        ขับขี่อย่างมีสไตล์ พร้อมลุยทุกเส้นทางกับ ยานยนต์ คุณภาพเยี่ยม!
+    </div>
+    <div class="bike-gallery">
+        <div class="Bike">
+            <img src="bike1.jpg" alt="Honda Wave1000RR">
+            <div class="price">ราคา: 50,000 บาท</div>
+        </div>
+        <div class="BIG Bike">
+            <img src="bike2.jpg" alt="Honda CBR1000RR">
+            <div class="price">ราคา: 200,000 บาท</div>
+        </div>
+        <div class="CAR">
+            <img src="bike3.jpg" alt="Isuzu DMAX">
+            <div class="price">ราคา: 500,000 บาท</div>
+        </div>
+    </div>
+</body>
+</html>
+"""
+
+with open("bigbike_website.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print("ไฟล์เว็บไซต์ถูกสร้างแล้วในชื่อ MOTOR_website.html")
+
