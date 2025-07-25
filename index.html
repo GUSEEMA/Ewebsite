@@ -4,17 +4,19 @@ html_content = """
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>ร้านขายยานพาหนะสำหรับนักศึกษา มช.</title>
+    <title>ยานพาหนะสำหรับนักศึกษา มช. ที่ชำนาญการ</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=TH+Sarabun+New&display=swap');
         body {
-            font-family: 'TH SarabunPSK', sans-serif;
+            font-family: 'TH SarabunPSK', 'TH Sarabun New', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #1c1c1c;
+            color: #f4f4f4;
         }
         header {
-            background-color: #222;
-            color: white;
+            background-color: #000;
+            color: #ff3c00;
             text-align: center;
             padding: 30px 0;
         }
@@ -22,18 +24,16 @@ html_content = """
             height: 100px;
             display: block;
             margin: 0 auto 10px auto;
-
         }
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.2em;
         }
-
         .advertisement {
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.6em;
             margin: 30px 20px;
-            color: #333;
+            color: #ff3c00;
         }
         .bike-gallery {
             display: flex;
@@ -42,24 +42,24 @@ html_content = """
             margin: 20px;
         }
         .bike {
-            background-color: white;
-            border: 1px solid #ccc;
+            background-color: #2c2c2c;
+            border: 1px solid #444;
             border-radius: 10px;
-            width: 300px;
+            width: 320px;
             margin: 15px;
             padding: 15px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
+            box-shadow: 0 4px 8px rgba(255,60,0,0.3);
         }
         .bike img {
-            width: 100%;
-            height: auto;
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
             border-radius: 6px;
         }
         .price {
-            font-size: 1.3em;
-            color: #e91e63;
+            font-size: 1.4em;
+            color: #ff3c00;
             margin-top: 10px;
         }
     </style>
@@ -67,21 +67,21 @@ html_content = """
 <body>
     <header>
         <img src="logo.png" alt="โลโก้ร้าน Big Bike">
-        <h1>ร้าน ยานยนต์ สำหรับนักศึกษา มหาวิทยาลัยเชียงใหม่</h1>
+        <h1>ยานพาหนะสำหรับนักศึกษา มช. ที่ชำนาญการ</h1>
     </header>
     <div class="advertisement">
-        ขับขี่อย่างมีสไตล์ พร้อมลุยทุกเส้นทางกับ ยานยนต์ คุณภาพเยี่ยม!
+        ขับขี่อย่างดุดัน พร้อมลุยทุกเส้นทางกับ ยานยนต์ คุณภาพเยี่ยมเกินคำบรรยาย!
     </div>
     <div class="bike-gallery">
-        <div class="Bike">
+        <div class="bike">
             <img src="bike1.jpg" alt="Honda Wave1000RR">
             <div class="price">ราคา: 50,000 บาท</div>
         </div>
-        <div class="BIG Bike">
+        <div class="bike">
             <img src="bike2.jpg" alt="Honda CBR1000RR">
             <div class="price">ราคา: 200,000 บาท</div>
         </div>
-        <div class="CAR">
+        <div class="bike">
             <img src="bike3.jpg" alt="Isuzu DMAX">
             <div class="price">ราคา: 500,000 บาท</div>
         </div>
@@ -90,8 +90,7 @@ html_content = """
 </html>
 """
 
-with open("MOTOR_website.html", "w", encoding="utf-8") as f:
+with open("MOTOR_website_updated.html", "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("ไฟล์เว็บไซต์ถูกสร้างแล้วในชื่อ MOTOR_website.html")
-
+print("ไฟล์เว็บไซต์ที่ปรับปรุงแล้วถูกสร้างในชื่อ MOTOR_website_updated.html")
